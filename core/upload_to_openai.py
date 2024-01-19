@@ -1,4 +1,5 @@
-import openai
+from openai import OpenAI
+client = OpenAI()
 
 file_id = openai.File.create(
   file=open("training_examples.jsonl", "rb"),
